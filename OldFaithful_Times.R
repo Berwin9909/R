@@ -11,7 +11,7 @@ waiting<-a$waiting
 hist(duration,breaks=20,prob=T)
 lines(density(duration))
 
-plot(duration,waiting,xlab="Duration",ylab="Time between eruptions")
+plot(duration,waiting,"p",col="blue",xlab="Duration",ylab="Time between eruptions")
 lm(waiting ~ duration)$coefficients[2]
 
 abline(lm(waiting ~ duration))
